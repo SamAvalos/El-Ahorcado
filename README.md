@@ -35,13 +35,13 @@ git clone https://github.com/SamAvalos/El-Ahorcado.git
 cd El-Ahorcado
 ```
 
-##Cómo Jugar
+## Cómo Jugar
 1. Ejecuta el archivo del juego
 ```
 python Juego_El_Ahorcado
 ```
 
-##Menú Principal
+## Menú Principal
 
 Al iniciar el juego, verás las siguientes opciones:
 
@@ -51,7 +51,7 @@ Al iniciar el juego, verás las siguientes opciones:
 
 3. Salir: Cierra el juego.
 
-##Reglas del Juego
+## Reglas del Juego
 
 - Se elige una palabra aleatoria de una lista predefinida.
 
@@ -65,7 +65,7 @@ Al iniciar el juego, verás las siguientes opciones:
 
 - Si el jugador adivina la palabra completa antes de que se acaben los intentos, gana la partida.
 
-##Mejoras Futuras
+## Mejoras Futuras
 Algunas posibles mejoras para el juego:
 
 - Implementar un sistema de puntuación.
