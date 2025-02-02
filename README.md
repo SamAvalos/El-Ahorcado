@@ -38,7 +38,7 @@ cd El-Ahorcado
 ## Cómo Jugar
 1. Ejecuta el archivo del juego
 ```
-python Juego_El_Ahorcado
+python Juego_El_Ahorcado.py
 ```
 
 ## Menú Principal
