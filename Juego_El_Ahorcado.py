@@ -11,7 +11,7 @@ def mostrar_menu():
     print("=====================================")
     print(" 1. Jugar (modo clasico)")
     print(" 2. Jugar multijugador (2 jugadores)")
-    print(" 3. Jugar contra la computadora)")
+    print(" 3. Jugar contra la computadora")
     print(" 4. Como se juega el modo clasico?")
     print(" 5. Como se juega multijugador?")
     print(" 6. Como se juega contra la computadora?")
