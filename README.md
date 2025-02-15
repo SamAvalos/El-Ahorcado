@@ -45,7 +45,7 @@ cd El-Ahorcado
 ```
 python Juego_El_Ahorcado.py
 ```
-## Como actualizar (en caso de ya tener descargado una version antigua)
+## Como actualizar (en caso de ya tener descargada una version antigua)
 
 1. Accede a la carpeta del proyecto
 ```
@@ -87,8 +87,6 @@ Al iniciar el juego, verás las siguientes opciones:
 
 ## Mejoras Futuras
 Algunas posibles mejoras para el juego:
-
-- Implementar un sistema de puntuación.
 
 - Agregar múltiples niveles de dificultad.
 
