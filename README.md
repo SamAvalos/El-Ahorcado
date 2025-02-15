@@ -6,7 +6,7 @@
 El jugador tiene la oportunidad de 3 modos de juego.
    - Modo Clasico (1 jugador)
    - Modo Multijugador (2 jugadores)
-   - Modo Jugador ontra computadora
+   - Modo Jugador contra computadora
 
 ## Estado del proyecto
 Este proyecto está completo y en funcionamiento. No se planifican cambios significativos, aunque se puede ampliar su compatibilidad, ya que solo esta disponible en el sistema operativo **Windows**.
