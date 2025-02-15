@@ -9,12 +9,14 @@ def mostrar_menu():
     print("=====================================")
     print("    Bienvenido al juego 'El Ahorcado'      ")
     print("=====================================")
-    print(" 1. Jugar")
+    print(" 1. Jugar (modo clasico)")
     print(" 2. Jugar multijugador (2 jugadores)")
-    print(" 3. Jugar multijugador (vs computadora)")
-    print(" 4. Como se juega?")
-    print(" 5. Mostar puntuaciones")
-    print(" 6. Salir")
+    print(" 3. Jugar contra la computadora)")
+    print(" 4. Como se juega el modo clasico?")
+    print(" 5. Como se juega multijugador?")
+    print(" 6. Como se juega contra la computadora?")
+    print(" 7. Mostar puntuaciones")
+    print(" 8. Salir")
     print("=====================================")
 
 def mostrar_como_jugar():
@@ -24,12 +26,48 @@ def mostrar_como_jugar():
     print("=====================================")
     print(" 1. Selecciona una letra")
     print(" 2. Si la letra esta en la palabra, se mostrara en la palabra")
-    print(" 3. Si la letra no esta en la palabra, se dibujara una parte del ahorcado")
+    print(" 3. Si la letra no esta en la palabra, se restara un intento al jugador")
     print(" 4. Tienes 6 intentos para adivinar la palabra")
     print(" 5. Si adivinas la palabra, ganas")
     print(" 6. Si no adivinas la palabra, pierdes")
     print("=====================================")
     input("Presiona ENTER para regresar al menú...")
+    os.system('cls')
+
+def mostrar_como_jugar_multijugador():
+    os.system('cls')
+    print("===============================================================")
+    print("    Como se juega 'El Ahorcado' en modo multijugador")
+    print("===============================================================")
+    print(" 1. Jugador 1 escoge su nombre (asi se guardará tu puntuacion)")
+    print(" 2. Jugador 2 escoge su nombre (asi se guardará la puntuacion de ese jugador)")
+    print(" 3. Jugador 1 escoge una palabra para que Jugador 2 la adivine")
+    print(" 4. Jugador 2 intenta adivinar la palabra de Jugador 1 en los 6 intentos que tiene")
+    print(" 5. Luego de que jugador 2 adivine la palabra o pierda, se cambian los roles")
+    print(" 6. Jugador 2 escoge una palabra para que Jugador 1 la adivine")
+    print(" 7. Jugador 1 intenta adivinar la palabra de Jugador 2 en los 6 intentos que tiene")
+    print(" 8. Luego de que jugador 1 adivine la palabra o pierda, se da la opcione de jugar de nuevo o salir al menu")
+    print("=====================================")
+    input("Presiona ENTER para regresar al menú...")
+    os.system('cls')
+    
+def mostrar_como_jugar_computadora():
+    os.system('cls')
+    print("===============================================================")
+    print("    Como se juega 'El Ahorcado' conta la computadora")
+    print("===============================================================")
+    print(" 1. Jugador 1 escoge su nombre (asi se guardará tu puntuacion)")
+    print(" 2. Jugador 1 tiene 6 oportunidades para adinivar las palabra" )
+    print(" 3. Si jugador 1 no adivina la letra se le resta un intento")
+    print(" 4. Si adivia la palabra gana 10 puntos")
+    print(" 5. si no adivina la palabra pierde")
+    print(" 6. Luego jugador 1 escoge una palabra para que la computadora la adivine")
+    print(" 7. La computadora tiene 6 intentos para adivinar la palabra")
+    print(" 8. Si adivina gana, si no pierde")
+    print(" 9. Se da la opcion de jugar de nuevo o salir al menu")
+    print("===============================================================")
+    input("Presiona ENTER para regresar al menú...")
+    os.system('cls')
 
 def guardar_puntuacion(jugador, puntos):
     puntuaciones = cargar_puntuaciones()
@@ -325,14 +363,23 @@ def main():
             jugar_vs_computadora(jugador)
         elif opcion == "4":
             mostrar_como_jugar()
+            os.system('cls')
         elif opcion == "5":
-            mostrar_puntuaciones()
+            mostrar_como_jugar_multijugador()
+            os.system('cls')
         elif opcion == "6":
+            mostrar_como_jugar_computadora()
+            os.system('cls')
+        elif opcion == "7":
+            mostrar_puntuaciones()
+            os.system('cls')
+        elif opcion == "8":
             print("¡Gracias por jugar! Hasta la próxima.")
             break
         else:
             print("Opción inválida.")
             input("Presiona ENTER para continuar...")
+            os.system('cls')
 
 if __name__ == "__main__":
     main()
