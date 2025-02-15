@@ -45,7 +45,7 @@ cd El-Ahorcado
 ```
 python Juego_El_Ahorcado.py
 ```
-## ACTUALIZAR (SI YA LO TIENES INSTALADO CON UNA VERSION ANTIGUA)
+## Como actualizar (en caso de ya tener descargado una version antigua)
 
 1. Accede a la carpeta del proyecto
 ```
