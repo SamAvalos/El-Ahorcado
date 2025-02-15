@@ -4,7 +4,7 @@
 "El Ahorcado" es un juego clásico de adivinanza de palabras. En este caso el jugador tiene que adivinar una palabra oculta, seleccionando letras. Si la letra está en la palabra, se revela en su posición correcta. Si la letra no está en la palabra, se le resta un intento al jugador. El jugador tiene un máximo de 6 intentos para adivinar la palabra. Si el jugador llega a perder sus 6 intentos, el perdera la partida y tendra la oportunidad de jugar otra vez o salir al menu.
 
 El jugador tiene la oportunidad de 3 modos de juego.
-   -Modo Clasico (1 jugador)
+/n-Modo Clasico (1 jugador)
    -Modo Multijugador (2 jugadores)
    -Modo Jugador ontra computadora
 
