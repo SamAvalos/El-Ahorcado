@@ -44,7 +44,22 @@ cd El-Ahorcado
 ```
 python Juego_El_Ahorcado.py
 ```
+## ACTUALIZAR (SI YA LO TIENES INSTALADO CON UNA VERSION ANTIGUA)
 
+1. Accede a la carpeta del proyecto
+```
+cd El-Ahorcado
+```
+2.Actualizar los cambios realizados
+```
+git pull origin main
+```
+
+## Cómo Jugar
+1. Ejecuta el archivo del juego
+```
+python Juego_El_Ahorcado.py
+```
 ## Menú Principal
 
 Al iniciar el juego, verás las siguientes opciones:
