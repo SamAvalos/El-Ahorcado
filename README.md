@@ -11,6 +11,10 @@ El jugador tiene la oportunidad de 3 modos de juego.
 ## Estado del proyecto
 Este proyecto está completo y en funcionamiento. No se planifican cambios significativos, aunque se puede ampliar su compatibilidad, ya que solo esta disponible en el sistema operativo **Windows**.
 
+   - Versión de Python compatible: 3.x.
+   - Bibliotecas usadas: Os, Random, Time
+   
+
 ## Guía de usuario
 
 1. Al inicio del juego, se muestra un menú con las siguientes opciones:
