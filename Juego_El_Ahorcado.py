@@ -69,6 +69,7 @@ def mostrar_como_jugar_computadora():
     input("Presiona ENTER para regresar al menú...")
     os.system('cls')
 
+    # Funcion para guardar la puntuacion de los jugadores
 def guardar_puntuacion(jugador, puntos):
     puntuaciones = cargar_puntuaciones()
     if jugador in puntuaciones:
@@ -79,6 +80,7 @@ def guardar_puntuacion(jugador, puntos):
         for nombre, score in puntuaciones.items():
             file.write(f"{nombre},{score}\n")
 
+    # Funcion para cargar las puntuaciones de los jugadores
 def cargar_puntuaciones():
     puntuaciones = {}
     if os.path.exists("puntuaciones.txt"):
@@ -88,6 +90,7 @@ def cargar_puntuaciones():
                 puntuaciones[nombre] = int(score)
     return puntuaciones
 
+    # Funcion para mostrar las puntuaciones de los jugadores
 def mostrar_puntuaciones():
     puntuaciones = cargar_puntuaciones()
     print("===== PUNTUACIONES =====")
@@ -168,6 +171,7 @@ def jugar():
         else:
             print("Respuesta inválida. Ingresa 's' para sí o 'n' para no.")
 
+    # Funcion para jugar en modo multijugador
 def jugar_multijugador(jugador_1, jugador_2):
     for ronda in range(2):
         if ronda == 0:
@@ -175,6 +179,7 @@ def jugar_multijugador(jugador_1, jugador_2):
         else:
             jugador_actual, adivinador = jugador_2, jugador_1
         
+        # Jugador actual elige una palabra para que el adivinador la adivine
         os.system('cls')
         print(f"{jugador_actual}, elige una palabra para que {adivinador} la adivine:")
         palabra_secreta = input("Ingresa la palabra secreta: ").lower()
@@ -225,7 +230,7 @@ def jugar_multijugador(jugador_1, jugador_2):
             print("Respuesta inválida. Ingresa 's' para sí o 'n' para no.")
 
 def jugar_vs_computadora(jugador):
-    # Paso 1: La computadora elige una palabra para el jugador
+    #La computadora elige una palabra para el jugador
     palabras = ["python", "redes", "variables", "programacion", "computadora", "teclado", "mouse", "monitor", "memoria", "almacenamiento"]
     palabra_computadora = random.choice(palabras)
     palabra_oculta = list("_" * len(palabra_computadora))
@@ -273,7 +278,7 @@ def jugar_vs_computadora(jugador):
          print(f"¡Perdiste! La palabra de la computadora era: {palabra_computadora}")
     input("Presiona ENTER para salir...")
 
-    # Paso 2: Ahora la computadora intentará adivinar la palabra del jugador
+    #Ahora la computadora intentará adivinar la palabra del jugador
     os.system('cls')
     print(f"{jugador}, ahora elige una palabra para que la computadora intente adivinarla.")
     palabra_jugador = input("Ingresa tu palabra secreta: ").lower()
