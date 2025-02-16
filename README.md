@@ -3,6 +3,11 @@
 ## Descripción
 "El Ahorcado" es un juego clásico de adivinanza de palabras. En este caso el jugador tiene que adivinar una palabra oculta, seleccionando letras. Si la letra está en la palabra, se revela en su posición correcta. Si la letra no está en la palabra, se le resta un intento al jugador. El jugador tiene un máximo de 6 intentos para adivinar la palabra. Si el jugador llega a perder sus 6 intentos, el perdera la partida y tendra la oportunidad de jugar otra vez o salir al menu.
 
+El jugador tiene la oportunidad de 3 modos de juego.
+   - Modo Clasico (1 jugador)
+   - Modo Multijugador (2 jugadores)
+   - Modo Jugador contra computadora
+
 ## Estado del proyecto
 Este proyecto está completo y en funcionamiento. No se planifican cambios significativos, aunque se puede ampliar su compatibilidad, ya que solo esta disponible en el sistema operativo **Windows**.
 
@@ -40,7 +45,22 @@ cd El-Ahorcado
 ```
 python Juego_El_Ahorcado.py
 ```
+## Como actualizar (en caso de ya tener descargada una version antigua)
 
+1. Accede a la carpeta del proyecto
+```
+cd El-Ahorcado
+```
+2.Actualizar los cambios realizados
+```
+git pull origin main
+```
+
+## Cómo Jugar
+1. Ejecuta el archivo del juego
+```
+python Juego_El_Ahorcado.py
+```
 ## Menú Principal
 
 Al iniciar el juego, verás las siguientes opciones:
@@ -67,8 +87,6 @@ Al iniciar el juego, verás las siguientes opciones:
 
 ## Mejoras Futuras
 Algunas posibles mejoras para el juego:
-
-- Implementar un sistema de puntuación.
 
 - Agregar múltiples niveles de dificultad.
 
