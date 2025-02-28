@@ -18,8 +18,12 @@ Este proyecto está completo y en funcionamiento. No se planifican cambios signi
 ## Guía de usuario
 
 1. Al inicio del juego, se muestra un menú con las siguientes opciones:
-   - **Jugar**: Inicia el juego **El Ahorcado**
-   - **¿Cómo se juega?**: Muestra como se juega el juego y sus reglas
+   - **Jugar (modo clasico)**: Inicia el juego **El Ahorcado**
+   - **Jugar multijugador (2 jugadores)**: Inicia el juego **El Ahorcado de 2 jugadores**
+   - **Jugar contra computadora**: Inicia el juego **El Ahorcado vs la computadora**
+   - **¿Cómo se juega el modo clasico?**: Muestra como se juega el juego y sus reglas
+   - **¿Cómo se juega multijugador?**: Muestra como se juega el juego y sus reglas en el modo multijugador
+   - **¿Cómo se juega contra la computadora?**: Muestra como se juega el juego y sus reglas en el modo contra la computadora
    - **Salir**: Cierra el juego.
 
 2. Durante el juego:
