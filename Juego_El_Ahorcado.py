@@ -69,18 +69,31 @@ def mostrar_como_jugar_computadora():
     input("Presiona ENTER para regresar al menú...")
     os.system('cls')
 
-    # Funcion para guardar la puntuacion de los jugadores
-def guardar_puntuacion(jugador, puntos):
-    puntuaciones = cargar_puntuaciones()
-    if jugador in puntuaciones:
-        puntuaciones[jugador] += puntos
-    else:
-        puntuaciones[jugador] = puntos
-    with open("puntuaciones.txt", "w") as file:
-        for nombre, score in puntuaciones.items():
-            file.write(f"{nombre},{score}\n")
+def puntuaciones(jugador=None):
+    # Verificar si el archivo de puntuaciones existe, si no lo crea
+    if not os.path.exists("puntuaciones.txt"):
+        with open("puntuaciones.txt", "w") as file:
+            pass  # Solo crear el archivo vacío si no existe
 
-    # Funcion para cargar las puntuaciones de los jugadores
+    if jugador:
+        # Mostrar las estadísticas de un jugador específico
+        puntuaciones = cargar_puntuaciones()
+        if jugador in puntuaciones:
+            print(f"Puntuaciones de {jugador}: {puntuaciones[jugador]} puntos")
+        else:
+            print(f"No se encontró puntuación para el jugador {jugador}.")
+    else:
+        # Mostrar todas las puntuaciones
+        puntuaciones = cargar_puntuaciones()
+        if puntuaciones:
+            print("===== PUNTUACIONES =====")
+            for nombre, score in puntuaciones.items():
+                print(f"{nombre}: {score} puntos")
+            print("=======================")
+        else:
+            print("No hay puntuaciones registradas.")
+    input("Presiona ENTER para regresar al menú...")
+
 def cargar_puntuaciones():
     puntuaciones = {}
     if os.path.exists("puntuaciones.txt"):
@@ -90,14 +103,15 @@ def cargar_puntuaciones():
                 puntuaciones[nombre] = int(score)
     return puntuaciones
 
-    # Funcion para mostrar las puntuaciones de los jugadores
-def mostrar_puntuaciones():
+def guardar_puntuacion(jugador, puntos):
     puntuaciones = cargar_puntuaciones()
-    print("===== PUNTUACIONES =====")
-    for jugador, puntos in puntuaciones.items():
-        print(f"{jugador}: {puntos} puntos")
-    print("=======================")
-    input("Presiona ENTER para regresar al menú...")
+    if jugador in puntuaciones:
+        puntuaciones[jugador] += puntos
+    else:
+        puntuaciones[jugador] = puntos
+    with open("puntuaciones.txt", "w") as file:
+        for nombre, score in puntuaciones.items():
+            file.write(f"{nombre},{score}\n")
 
     
 def jugar():
@@ -376,7 +390,7 @@ def main():
             mostrar_como_jugar_computadora()
             os.system('cls')
         elif opcion == "7":
-            mostrar_puntuaciones()
+            puntuaciones()
             os.system('cls')
         elif opcion == "8":
             print("¡Gracias por jugar! Hasta la próxima.")
